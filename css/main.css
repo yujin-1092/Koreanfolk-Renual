@@ -39,6 +39,22 @@ body{
 }
 
 /*HEADER*/
+nav{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 51px;
+  padding-right: 64px;
+}
+header h1{
+  background: url(../image/common/logo_new.svg) no-repeat;
+  width: 273px;
+  height: 57.73px;
+  text-indent: -9999em;
+}
+nav ul{
+  display: flex;
+}
+
 
 /*SECTION*/
 
