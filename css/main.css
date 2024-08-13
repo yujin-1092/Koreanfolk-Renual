@@ -12,6 +12,12 @@
   --priymary:#FF6600;
   --nomal:#89E5FF;
   --abnomal:#FF898B;
+  --container:1920px;
+}
+
+.container{
+  width: var(--container);
+  margin:0 auto;
 }
 
 /* TYPOGRAHY */
@@ -21,7 +27,7 @@
 
 body{
   font: 24px/24px "Noto Sans KR", sans-serif;
-  color: #000;
+  color: var(--black)
 }
 .main_tt{
   font : 96px/96px "Gasoek One", sans-serif;
@@ -30,29 +36,49 @@ body{
   color : var(--priymary)
 }
 .section_tt{
-  font:36px/48px;
+  font-size:36px;
+  line-height: 48px;
   font-weight: 500;
 }
 .section_sub_tt{
-  font: 20px/20px;
+  font-size: 20px;
+  line-height: 20px;
   font-weight: 500;
 }
 
 /*HEADER*/
-nav{
-  display: flex;
-  justify-content: space-between;
-  padding-left: 51px;
-  padding-right: 64px;
-}
+
 header h1{
   background: url(../image/common/logo_new.svg) no-repeat;
   width: 273px;
-  height: 57.73px;
+  height: 140px;
+  display: block;
   text-indent: -9999em;
+  margin-right:81px;
 }
-nav ul{
+.top_nav{
+  padding-left: 51px;
+  padding-right: 64px;
+}
+
+.top_nav > div{
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top_nav nav{
+  display: flex;
+  align-items: center;
+}
+.top_nav ul{
+  display: flex;
+  justify-content: space-between;
+}
+nav .main_menu{
+  gap:48px;
+}
+nav .sub_menu{
+  gap:42px;
 }
 
 
