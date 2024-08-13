@@ -3,3 +3,43 @@
 @import url(reset.css);
 @import url('https://fonts.googleapis.com/css2?family=Gasoek+One&family=Noto+Sans+KR:wght@100..900&display=swap');
 
+:root{
+  --white:#fff;
+  --black:#000;
+  --darkgray:#9C9C9C;
+  --mediumgray:#C8C8C8;
+  --lightgray:#F5F5F5;
+  --priymary:#FF6600;
+  --nomal:#89E5FF;
+  --abnomal:#FF898B;
+}
+
+/* TYPOGRAHY */
+
+/*font-family: "Gasoek One", sans-serif;*/
+/*font-family: "Noto Sans KR", sans-serif;*/
+
+body{
+  font: 24px/24px "Noto Sans KR", sans-serif;
+  color: #000;
+}
+.main_tt{
+  font : 96px/96px "Gasoek One", sans-serif;
+}
+.sub_tt{
+  color : var(--priymary)
+}
+.section_tt{
+  font:36px/48px;
+  font-weight: 500;
+}
+.section_sub_tt{
+  font: 20px/20px;
+  font-weight: 500;
+}
+
+/*HEADER*/
+
+/*SECTION*/
+
+/*FOOTER*/
