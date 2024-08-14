@@ -48,40 +48,58 @@ body{
 
 /*HEADER*/
 
+header {
+  display: flex;
+  align-items: center; 
+  height: 140px; 
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  width: 100%;
+}
+
+.top_nav {
+  display: flex;
+  align-items: center;
+  height: 100%; 
+}
+
+
 header h1{
   background: url(../image/common/logo_new.svg) no-repeat;
   width: 273px;
   height: 140px;
   display: block;
   text-indent: -9999em;
-  margin-right:81px;
-}
-.top_nav{
-  padding-left: 51px;
-  padding-right: 64px;
+  margin-right: 81px; 
 }
 
-.top_nav > div{
+.main_menu, .side_menu, .sub_menu {
   display: flex;
-  justify-content: space-between;
+  align-items: center; 
+  gap: 42px;
+}
+.sub_menu {
+  display: flex;
+  gap: 42px;
   align-items: center;
-}
-.top_nav nav{
-  display: flex;
-  align-items: center;
-}
-.top_nav ul{
-  display: flex;
-  justify-content: space-between;
-}
-nav .main_menu{
-  gap:48px;
-}
-nav .sub_menu{
-  gap:42px;
 }
 
+
+
+
+.slider{
+  display: none;
+}
 
 /*SECTION*/
+
+.nowevent{
+  display: none;
+}
+
 
 /*FOOTER*/
