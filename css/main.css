@@ -12,8 +12,10 @@
   --priymary:#FF6600;
   --nomal:#89E5FF;
   --abnomal:#FF898B;
-  --container:1920px;
+  --container:100%;
 }
+
+/* Style */
 
 .container{
   width: var(--container);
@@ -48,58 +50,3 @@ body{
 
 /*HEADER*/
 
-header {
-  display: flex;
-  align-items: center; 
-  height: 140px; 
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center; 
-  width: 100%;
-}
-
-.top_nav {
-  display: flex;
-  align-items: center;
-  height: 100%; 
-}
-
-
-header h1{
-  background: url(../image/common/logo_new.svg) no-repeat;
-  width: 273px;
-  height: 140px;
-  display: block;
-  text-indent: -9999em;
-  margin-right: 81px; 
-}
-
-.main_menu, .side_menu, .sub_menu {
-  display: flex;
-  align-items: center; 
-  gap: 42px;
-}
-.sub_menu {
-  display: flex;
-  gap: 42px;
-  align-items: center;
-}
-
-
-
-
-.slider{
-  display: none;
-}
-
-/*SECTION*/
-
-.nowevent{
-  display: none;
-}
-
-
-/*FOOTER*/
