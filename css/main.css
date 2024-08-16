@@ -9,9 +9,9 @@
   --darkgray:#9C9C9C;
   --mediumgray:#C8C8C8;
   --lightgray:#F5F5F5;
-  --priymary:#FF6600;
+  --primary:#FF6600;
   --nomal:#89E5FF;
-  --abnomal:#FF898B;
+  --abnomal:#221c1d;
   --container:100%;
 }
 
@@ -28,13 +28,13 @@
 
 body{
   font: 24px/24px "Noto Sans KR", sans-serif;
-  color: var(--black)
+  color: var(--black);
 }
 .main_tt{
   font : 96px/96px "Gasoek One", sans-serif;
 }
 .sub_tt{
-  color : var(--priymary)
+  color : var(--priymary);
 }
 .section_tt{
   font-size:36px;
@@ -53,14 +53,11 @@ body{
 /*HEADER*/
 
 .top_nav{
-  padding-left:51px;
-  padding-right:64px;
-}
-.top_nav .container{
+  padding: 38px 51px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   position: relative;
-  height: 140px;
 }
 .top_nav nav{
   display: flex;
@@ -70,6 +67,10 @@ body{
 .top_nav .main_menu{
   display: flex;
   gap:48px;
+}
+.top_nav .main_menu > li a:hover{
+  color: var(--primary);
+  font-weight: 700;
 }
 .top_nav .sub_menu{
   display: flex;
@@ -83,23 +84,28 @@ header h1{
   text-indent: -9999em;
   margin-right: 81px;
 }
+.main_menu > li{
+  position: relative;
+}
 .main_menu .depth{
   position: absolute;
-  top:140px;
-  padding: 28px 48px 35px 22px;
+  width: 250px;
+  top:100%;
+  padding: 90px 0 35px 22px;
   background: var(--white);
 }
-.main_menu .depth ul{
-  margin-bottom: 21px;
+.main_menu .depth li{
+  margin-bottom: 20px;
 }
-.main_menu .depth ul li{
-  margin-bottom: 18px;
+.main_menu .depth li:last-child{
+  margin-bottom: 0
 }
-.main_menu .depth ul li:last-child{
-  margin-bottom: 0;
+.main_menu .depth .sub_depth li{
+  margin-top: 18px;
 }
 .lang {
   position: relative;
+  margin-left: 43px;
 }
 .lang button{
   background: none;
