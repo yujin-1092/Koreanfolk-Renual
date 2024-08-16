@@ -46,6 +46,9 @@ body{
   line-height: 20px;
   font-weight: 500;
 }
+.nav_sub_depth{
+  font-size: 18px;
+}
 
 /*HEADER*/
 
@@ -86,6 +89,15 @@ header h1{
   padding: 28px 48px 35px 22px;
   background: var(--white);
 }
+.main_menu .depth ul{
+  margin-bottom: 21px;
+}
+.main_menu .depth ul li{
+  margin-bottom: 18px;
+}
+.main_menu .depth ul li:last-child{
+  margin-bottom: 0;
+}
 .lang {
   position: relative;
   margin-left: 43px;
@@ -98,8 +110,12 @@ header h1{
 .lang ul{
   position: absolute;
   width: 71px;
+  padding-top: 13px;
   padding-left: 12px;
-  padding-bottom: 14px;
+
   box-sizing: border-box;
   background: var(--white);
+}
+.lang li{
+  margin-bottom: 14px;
 }
