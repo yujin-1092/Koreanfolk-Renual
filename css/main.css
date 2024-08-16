@@ -19,7 +19,6 @@
 
 .container{
   width: var(--container);
-  margin:0 auto;
 }
 
 /* TYPOGRAHY */
@@ -50,3 +49,57 @@ body{
 
 /*HEADER*/
 
+.top_nav{
+  padding-left:51px;
+  padding-right:64px;
+}
+.top_nav .container{
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 140px;
+}
+.top_nav nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.top_nav .main_menu{
+  display: flex;
+  gap:48px;
+}
+.top_nav .sub_menu{
+  display: flex;
+  gap: 42px;
+}
+header h1{
+  background: url(../image/common/logo_new.svg) no-repeat;
+  width:273px;
+  height: 57.73px;
+  display: block;
+  text-indent: -9999em;
+  margin-right: 81px;
+}
+.main_menu .depth{
+  position: absolute;
+  top:140px;
+  padding: 28px 48px 35px 22px;
+  background: var(--white);
+}
+.lang {
+  position: relative;
+  margin-left: 43px;
+}
+.lang button{
+  background: none;
+  border: none;
+  width: 71px;
+}
+.lang ul{
+  position: absolute;
+  width: 71px;
+  padding-left: 12px;
+  padding-bottom: 14px;
+  box-sizing: border-box;
+  background: var(--white);
+}
