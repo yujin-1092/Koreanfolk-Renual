@@ -172,6 +172,9 @@ header h1{
   background: var(--mediumgray);
   display: inline-block;
 }
+.slider li{
+  margin-top: 22px;
+}
 
 /* banner */
 .slide_wrapper{
@@ -226,7 +229,7 @@ header h1{
   font-family: "Gasoek One", sans-serif;
   color:var(--primary);
   width: 104px;
-  position: absolute;
+  position: fixed;
   bottom:48px;
   right:60px;
   text-align: center;
