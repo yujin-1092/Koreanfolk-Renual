@@ -40,12 +40,14 @@ body{
   font : 96px/96px "Gasoek One", sans-serif;
 }
 .sub_tt{
-  color : var(--priymary);
+  color : var(--primary);
+  margin-bottom: 17px;
 }
 .section_tt{
   font-size:36px;
   line-height: 48px;
   font-weight: 500;
+  margin-bottom: 22px;
 }
 .section_sub_tt{
   font-size: 20px;
@@ -55,7 +57,10 @@ body{
 .nav_sub_depth{
   font-size: 18px;
 }
-
+.box{
+  padding : 0 252px;
+  margin-top: 190px;
+}
 
 /*HEADER*/
 body{
@@ -236,4 +241,38 @@ header h1{
 }
 .scrolldown .fa-chevron-down{
   color: var(--white);
+}
+
+/*nowevent*/
+
+.nowevent .contents_ne > div{
+  margin-top: 72px;
+  width: 408px;
+  height: 516px;
+  padding:57px 44px 0;
+  border: 1px var(--mediumgray) solid; 
+  background: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .1);
+  box-sizing: border-box;
+}
+.contents_ne div{
+  position: relative;
+}
+.contents_ne div a{
+  position: absolute;
+  display: inline-block;
+  background: var(--lightgray);
+  bottom: 0;
+  width: 100%;
+  height: 97px;
+  align-items: center;
+}
+.contents_ne .show .show_ex > li{
+  margin-bottom: 17px;
+}
+.contents_ne .show p{
+  margin-top: 36px;
+  font-size: 20px;
+  line-height: 28px;
 }
