@@ -19,6 +19,7 @@
 
 .container{
   width: var(--container);
+  height: 100vh;
 }
 .fa-chevron-down{
   color: var(--primary);
@@ -55,8 +56,11 @@ body{
   font-size: 18px;
 }
 
-/*HEADER*/
 
+/*HEADER*/
+body{
+  position: relative;
+}
 .top_nav{
   padding: 38px 51px;
   width: 100%;
@@ -152,6 +156,22 @@ header h1{
   color:var(--primary);
   cursor: pointer;
 }
+.slider{
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 65px;
+  font-size: 10px;
+  line-height: 10px;
+  text-align: center;
+}
+.slider a{
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--mediumgray);
+  display: inline-block;
+}
 
 /* banner */
 .slide_wrapper{
@@ -183,7 +203,6 @@ header h1{
 .slide3{ background-image: url(../image/banner/MAIN_banner3.jpg); }
 .slide4{ background-image: url(../image/banner/MAIN_banner4.jpg); }
 .slide5{ background-image: url(../image/banner/MAIN_banner5.jpg); }
-
 .pager {
   position: absolute;
   left: 0;
@@ -191,7 +210,6 @@ header h1{
   bottom: 52px;
   text-align: center;
 }
-
 .pager a {
   width: 14px;
   height: 14px;
@@ -201,7 +219,9 @@ header h1{
   text-indent: -9999em;
   display: inline-block;
 }
-
+.pager a.active{
+  background: var(--white);
+}
 .scrolldown{
   font-family: "Gasoek One", sans-serif;
   color:var(--primary);
@@ -214,4 +234,3 @@ header h1{
 .scrolldown .fa-chevron-down{
   color: var(--white);
 }
-
