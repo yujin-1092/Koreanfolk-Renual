@@ -24,6 +24,11 @@
 .fa-chevron-down{
   color: var(--primary);
 }
+.box{
+  padding : 0 252px;
+  margin-top: 190px;
+  position: relative;
+}
 /* TYPOGRAHY */
 
 /*font-family: "Gasoek One", sans-serif;*/
@@ -57,11 +62,16 @@ body{
 .nav_sub_depth{
   font-size: 18px;
 }
-.box{
-  padding : 0 252px;
-  margin-top: 190px;
+.goto{
+  line-height: 48px;
+  color: var(--darkgray);
 }
-
+.goto:hover{
+  color: var(--black);
+}
+.goto:hover .fa-up-right-from-square{
+  color: var(--primary);
+}
 /*HEADER*/
 body{
   position: relative;
@@ -69,7 +79,7 @@ body{
 .top_nav{
   padding: 38px 51px;
   width: 100%;
-  height: 140px;
+  height: 13.7vh;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -181,6 +191,38 @@ header h1{
   margin-top: 22px;
 }
 
+.weather{
+  position: fixed;
+  z-index: -1;
+  background: var(--lightgray);
+  border-radius: 10px;
+  left: 0;
+  top: 240px;
+  width: 153px;
+  height: 288px;
+  text-align: center;
+  padding: 27px 0 23px;
+  box-sizing: border-box;
+}
+.weather div{
+  margin-top: 28px;
+}
+.weather h3{
+  font : 22px/22px "Gasoek One", sans-serif;
+  color: var(--primary);
+}
+.weather h4{
+  font : 20px/20px "Gasoek One", sans-serif;
+}
+.weather div span{
+  font-size: 48px;
+  line-height: 48px;
+  color: var(--darkgray);
+}
+.weather div p{
+  font-size: 16px;
+  line-height: 24px;
+}
 /* banner */
 .slide_wrapper{
   position: relative;
@@ -230,6 +272,9 @@ header h1{
 .pager a.active{
   background: var(--white);
 }
+
+/* Scroll */
+
 .scrolldown{
   font-family: "Gasoek One", sans-serif;
   color:var(--primary);
@@ -238,28 +283,41 @@ header h1{
   bottom:48px;
   right:60px;
   text-align: center;
+  z-index: 1000;
 }
 .scrolldown .fa-chevron-down{
   color: var(--white);
+  display: block;
+  transition: transform 0.3s ease;
+}
+.scrolldown.topMode .fa-chevron-down{
+  transform: rotate(180deg);
+  color: var(--primary);
+}
+.scrolldown.topMode{
+  content: "TOP";
 }
 
 /*nowevent*/
 
-.nowevent .contents_ne > div{
+.nowevent .contents_title > div{
   margin-top: 72px;
   width: 408px;
   height: 516px;
-  padding:57px 44px 0;
+
   border: 1px var(--mediumgray) solid; 
   background: var(--white);
   border-radius: 10px;
-  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .1);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .2);
   box-sizing: border-box;
 }
-.contents_ne div{
+.contents_title .show{
   position: relative;
 }
-.contents_ne div a{
+.contents_title .show > div{
+  padding: 57px 44px 0;
+}
+.contents_title div a{
   position: absolute;
   display: inline-block;
   background: var(--lightgray);
@@ -267,12 +325,131 @@ header h1{
   width: 100%;
   height: 97px;
   align-items: center;
+  padding-top: 22px;
+  padding-left: 44px;
+  box-sizing: border-box;
+  overflow: hidden;
 }
-.contents_ne .show .show_ex > li{
+.contents_title .show .show_ex > li{
   margin-bottom: 17px;
 }
-.contents_ne .show p{
+.contents_title .show p{
   margin-top: 36px;
   font-size: 20px;
   line-height: 28px;
+}
+.show_time {
+  position: absolute;
+  left: 612px;
+  top:0;
+  width: 1308px;
+  height: 600px;
+  z-index: -1;
+  border-radius: 10px;
+}
+.show_time ul{
+  width: 1308px;
+  height: 600px;
+}
+.show_time ul li {
+  position: absolute;
+  width: 1308px;
+  height: 600px;
+  z-index: -1;
+  border-radius: 10px;
+  background-position: center center;
+  background-size: cover;
+}
+.swslide1 {background-image: url(../image/banner/now/PER_LIST1.jpg);}
+.swslide2 {background-image: url(../image/banner/now/PER_LIST2.jpg);}
+.swslide3 {background-image: url(../image/banner/now/PER_LIST3.jpg);}
+.swslide4 {background-image: url(../image/banner/now/PER_LIST4.jpg);}
+.swslide5 {background-image: url(../image/banner/now/PER_LIST5.jpg);}
+.swslide6 {background-image: url(../image/banner/now/PER_LIST6.jpg);}
+.swslide7 {background-image: url(../image/banner/now/PER_LIS7.jpg);}
+
+
+/* discount */
+.dis_title h2{
+  margin-bottom: 32px;
+}
+.dis_title .goto{
+  display: inline-block;
+}
+.discount .discount_list{
+  margin-top: 47px;
+  position: relative;
+}
+.discount .box .discount_list ul{
+  display: flex;
+  gap:26px;
+  width: 1414px;
+  overflow: hidden;
+}
+.discount_list ul li .dis_contents{
+  position: relative;
+  width: 334px;
+  height: 425px;
+  border-radius: 10px;
+  background: #FFF8DB;
+}
+.dis_price{
+  position: absolute;
+  width: 334px;
+  padding: 17px 27px 0;
+  height: 90px;
+  background: var(--white);
+  box-sizing: border-box;
+  bottom:-90px;
+}
+.dis_contents{
+  padding: 48px 24px;
+  box-sizing: border-box;
+}
+.dis_contents h6{
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+.dis_contents h5{
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 34px;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+.dis_contents p{
+  font-size: 15px;
+}
+.dis_contents p em{
+  font-size: 22px;
+  font-weight:500;
+}
+.discount_list ul li:hover{
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .2);
+}
+.discount_list ul li:hover .dis_price{
+  bottom:0;
+}
+.discount_list ul li div:hover:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, .5);
+}
+.dis_btn{
+  display: flex;
+  gap: 36px;
+  position: absolute;
+  top: -63px;
+  right: 0;
+}
+.dis_prev, .dis_next{
+  width: 36px;
+  line-height: 36px;
+}
+.dis_prev:hover, .dis_next:hover{
+  color: var(--primary);
 }
