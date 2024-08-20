@@ -386,8 +386,12 @@ header h1{
   width: 1414px;
   overflow: hidden;
 }
-.discount_list ul li .dis_contents{
+.discount_list ul li{
   position: relative;
+  background-position: right bottom;
+  background-size: auto;
+}
+.discount_list ul li .dis_contents{
   width: 334px;
   height: 425px;
   border-radius: 10px;
@@ -401,6 +405,12 @@ header h1{
   background: var(--white);
   box-sizing: border-box;
   bottom:-90px;
+  transition: 0.3s ease-out;
+  border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.discount_list ul li:hover .dis_price{
+  bottom:0;
 }
 .dis_contents{
   padding: 48px 24px;
@@ -427,10 +437,7 @@ header h1{
 .discount_list ul li:hover{
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .2);
 }
-.discount_list ul li:hover .dis_price{
-  bottom:0;
-}
-.discount_list ul li div:hover:after {
+.discount_list ul li div:hover:after{
   content: '';
   position: absolute;
   top: 0;
@@ -438,6 +445,7 @@ header h1{
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, .5);
+  border-radius: 10px;
 }
 .dis_btn{
   display: flex;

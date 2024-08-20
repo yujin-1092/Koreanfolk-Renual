@@ -6,6 +6,7 @@ let currentIdx = 0;
 let pager = slideWrapper.querySelector('.pager')
 let pagerHTML ='';
 
+
 // main banner 페이저
 slide.forEach((item,idx)=>{
   item.style.left = `${idx *100}%`;
@@ -41,3 +42,13 @@ scrollTopBtn.addEventListener('click',(e)=>{
     behavior: 'smooth'
   })
 });
+
+//원스크롤 원페이지
+window.addEventListener('wheel',(e)=>{
+  e.preventDefault();
+  if(screenY > 0){
+    window.scrollTo({
+      
+    })
+  }
+})
