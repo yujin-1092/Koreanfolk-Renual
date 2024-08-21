@@ -6,7 +6,6 @@ let currentIdx = 0;
 let pager = slideWrapper.querySelector('.pager')
 let pagerHTML ='';
 
-
 // main banner 페이저
 slide.forEach((item,idx)=>{
   item.style.left = `${idx *100}%`;
@@ -20,12 +19,17 @@ console.log(pagerHTML);
 
 
 // 스크롤
-const scrollTopBtn = document.querySelector('.scroll');
+const scrollTopBtn = document.querySelector('.scrolldown');
 const arrowIcon = scrollTopBtn.querySelector('.fa-chevron-down');
+
+const scrollY = window.scrollY
+const menuSlider = document.querySelectorAll('.slide li')
+const section = document.querySelectorAll('.section')
+
 
 // 스크롤 감지
 window.addEventListener('scroll',()=>{
-  if (window.scrollY > 100) {
+  if (scrollY > 100) {
     scrollTopBtn.classList.add('topMode');
     scrollTopBtn.innerHTML = 'Top <i class="fa-solid fa-chevron-down"></i>';
   } else {
@@ -35,7 +39,7 @@ window.addEventListener('scroll',()=>{
 });
 
 // TOP이 클릭됐을 때 상단으로 스크롤
-scrollTopBtn.addEventListener('click',(e)=>{
+scrollTopBtn.addEventListener('click', (e)=>{
   e.preventDefault();
   window.scrollTo({
     top: 0,
@@ -43,12 +47,5 @@ scrollTopBtn.addEventListener('click',(e)=>{
   })
 });
 
-//원스크롤 원페이지
-window.addEventListener('wheel',(e)=>{
-  e.preventDefault();
-  if(screenY > 0){
-    window.scrollTo({
-      
-    })
-  }
-})
+
+
