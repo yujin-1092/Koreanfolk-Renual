@@ -514,7 +514,6 @@ a[class^="underline"]:hover:after{
   color: var(--primary);
 }
 
-
 /* attribute */
 .atr_title{
   position: relative;
@@ -682,17 +681,19 @@ margin-bottom: 12px;
 
 /*etc*/
 .etc{
-  background: url(/image/banner/etc/Ect_BG.png) left center no-repeat;
-  position: relative;
+  background: url(/image/banner/etc/Ect_BG.png) left center no-repeat; 
 }
 .ETC_wrapper{
+  position: relative;
+}
+.ETC_container{
   position: absolute;
-  top:0px;
+  top:-115px;
   right: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  width: 987px;
+  width: 990px;
   height: 600px;
 }
 .ETC_wrapper .Etc_box{
