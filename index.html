@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+  <meta name="keywords" content="한국민속촌, 전통, 구직, 포트폴리오, 리뉴얼,">
+  <meta name="description" content="구직용 포트폴리오로 작성한 한국민속촌 홈페이지 리뉴얼입니다.">
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,24 @@
 
 </head>
 <body>
+  <div class="popup">
+    <div>
+      <h2>본 페이지는<br><em>구직용 포트폴리오</em> 웹사이트입니다. <br> 실제 운영 페이지가 아닙니다.
+      </h2>
+      <hr>
+      <p>프로젝트명: Koreanfolk Renual</p>
+      <p>제작기간: 2024.07. ~2024.08.22</p>
+      <p>개발 환경: html, css, javascript</p>
+      <p>기획서: figma 코드: githube</p>
+      <hr>
+      <p>기획·디자인·구현: 김유진</p>
+      <div class="cookie">
+        <label for="check">오늘 하루 열지 않음</label>
+        <input type="checkbox" id="check">
+        <button>닫기</button>
+      </div>
+    </div>
+  </div>
   <header>
     <div class="top_nav">
       <nav>
@@ -30,10 +49,10 @@
             </div>
         </li>
           <li><a href="" class="underline_from_left">요금/예약</a>
-            <div class="depth section_sub_tt">
+            <div class="depth active section_sub_tt">
               <ul>
                 <li><a href="#">단체 프로그램 예약 <i class="fa-solid fa-chevron-down"></i></a>
-                    <div class="sub_depth remove">
+                    <div class="sub_depth">
                       <ul class="nav_sub_depth">
                         <li><a href="#">유아/학생 단체</a></li>
                         <li><a href="#">성인 단체</a></li>
@@ -49,21 +68,21 @@
             <div class="depth section_sub_tt">
               <ul>
                 <li><a href="#">특별행사 <i class="fa-solid fa-chevron-down"></i></a>
-                  <div class="sub_depth remove">
+                  <div class="sub_depth">
                     <ul class="nav_sub_depth">
                       <li><a href="#">민속촌 NOW</a></li>
                       <li><a href="#">세시 행사</a></li>
                     </ul>
                   </div></li>
                 <li><a href="" >공연안내 <i class="fa-solid fa-chevron-down"></i></a>
-                  <div class="sub_depth remove">
+                  <div class="sub_depth">
                     <ul class="nav_sub_depth">
                       <li><a href="#">상설 공연</a></li>
                       <li><a href="#">오늘의 공연</a></li>
                     </ul>
                   </div></li>
                 <li><a href="#">체험전시 <i class="fa-solid fa-chevron-down"></i></a>
-                  <div class="sub_depth remove">
+                  <div class="sub_depth">
                     <ul class="nav_sub_depth">
                       <li><a href="#">상설 체험</a></li>
                       <li><a href="#">상설 전시</a></li>
@@ -71,7 +90,7 @@
                   </div></li>
                 <li><a href="#">어트랙션</a></li>
                 <li><a href="#">먹거리 <i class="fa-solid fa-chevron-down"></i></a>
-                  <div class="sub_depth remove">
+                  <div class="sub_depth">
                     <ul class="nav_sub_depth">
                       <li><a href="#">식당</a></li>
                       <li><a href="#">전통식품 구매</a></li>
@@ -115,7 +134,7 @@
       </div>
     </section>
     <main>
-      <section class="nowevent container">
+      <section id="nowevent" class="nowevent container">
         <a class="scrolldown" href="">Scroll <i class="fa-solid fa-chevron-down"></i></a>
         <ul class="menu_slider">
           <li><a href="#"></a></li>
@@ -209,7 +228,7 @@
                     <h6>마른 하늘에 물벼락!</h6>
                     <h5>물을 다스리는자 어디 없소 水神 선발전</h5>
                     <p>2024.<em>07.01</em>(월) ~ 2024.<em>08.25.</em>(일)</p>
-                    </div>
+                  </div>
                   <img src="image/banner/dis/DIS_MAIN2.png" alt="">
                 </div>
                 <div class="dis_price section_sub_tt">
@@ -410,7 +429,7 @@
           </ul>
         </div>
     </section>
-    <section class="etc container">
+    <section class="etc">
       <div class="box">
         <div class="etc_title">
           <h3 class="sub_tt">민속촌 이용</h3>
@@ -420,33 +439,45 @@
           <ul class="ETC_container">
               <li class="Etc_box"><a href="">
                 <img src="image/banner/etc/icon1.svg" alt="">
-                <h3>이용권 안내</h3>
-                <p>민속촌 이용요금을 확인해보세요!</p>
-                </a></li>
+                <div class="Etc_contents">
+                  <h3>이용권 안내</h3>
+                  <p>민속촌 이용요금을 <br>확인해보세요!</p>
+                </div>
+              </a></li>
               <li class="Etc_box"><a href="">
                 <img src="image/banner/etc/icon2.svg" alt="">
-                <h3>먹거리</h3>
-                <p>출출할 때 이곳에서! 먹거리를 확인해보세요</p>
+                <div class="Etc_contents">
+                  <h3>먹거리</h3>
+                  <p>출출할 때 이곳에서! <br>먹거리를 확인해보세요</p>
+                </div>
               </a></li>
               <li class="Etc_box"><a href="">
                 <img src="image/banner/etc/icon3.svg" alt="">
-                <h3>살거리</h3>
-                <p>기념품으로 민속촌을 추억하세요!</p>
+                <div class="Etc_contents">
+                  <h3>살거리</h3>
+                  <p>기념품으로 민속촌을 <br>추억하세요!</p>
+                </div>
               </a></li>
               <li class="Etc_box"><a href="">
                 <img src="image/banner/etc/icon4.svg" alt="">
-                <h3>자주 묻는 질문</h3>
-                <p>자주 묻는 질문을 통해 궁금증을 해결해보세요!</p>
+                <div class="Etc_contents">
+                  <h3>자주 묻는 질문</h3>
+                  <p>자주 묻는 질문을 통해 <br>궁금증을 해결해보세요!</p>
+                </div>
               </a></li>
               <li class="Etc_box"><a href="">
                 <img src="image/banner/etc/icon5.svg" alt="">
-                <h3>편의시설 안내</h3>
-              <p>유아 휴게실, 유모차/휠체어 대여 등 편의시설을 확인해보세요!</p>
+                <div class="Etc_contents">
+                  <h3>편의시설 안내</h3>
+                  <p>유아 휴게실, 유모차/휠체어 대여 등 <br>편의시설을 확인해보세요!</p>
+                </div>
               </a></li>
               <li class="Etc_box"><a href="">
                 <img src="image/banner/etc/icon6.svg" alt="">
+                <div class="Etc_contents">
                 <h3>교통정보 안내</h3>
-              <p>우리집에서 민속촌까지 어떻게? 대중교통, 자가용 안내</p>
+                <p>우리집에서 민속촌까지 어떻게? <br>대중교통, 자가용 안내</p>
+              </div>
               </a></li>
           </ul>
         </div>
@@ -454,8 +485,36 @@
     </section>
   </main>
   <footer>
-    <div>
-      
+    <div class="FT_container ft">
+      <div class="FT_contents">
+        <img src="image/common/footer LOGO.svg" alt="">
+        <ul class="FT_left">
+          <li>경기도 용인시 기흥구 민속촌로 90 한국민속촌</li>
+          <li>TEL. 031. 288. 0000 FAX. 031. 286. 4051</li>
+          <li>Copyright 2021 KoreanFolkVillage. All Right Reserved</li>
+        </ul>
+      </div>
+      <div class="FT_CR">
+        <div class="FT_center">
+          <a href="">이메일무단수집거부</a>
+          <a href="">개인정보처리방침</a>
+          <a href="">한국민속촌 전통식품</a>
+          <div class="FT_right">
+            <div class="FT_family">
+              <button>패밀리 사이트 <i class="fa-solid fa-chevron-down"></i></button>
+              <ul>
+                <li>남부골프사이트</li>
+              </ul>
+            </div>
+              <ul class="sns">
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+        </div>
+        </div>
+      </div>
     </div>
   </footer>
   <script src="js/main.js"></script>
