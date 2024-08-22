@@ -731,7 +731,7 @@ margin-bottom: 12px;
 
 /*etc*/
 .etc{
-  background: url(/image/banner/etc/Ect_BG.png) left 120% no-repeat;
+  background: url(../image/banner/etc/Ect_BG.png) left 120% no-repeat;
   height: 888px;
 }
 .ETC_wrapper{
@@ -758,7 +758,7 @@ margin-bottom: 12px;
   flex-direction: column;
   justify-content: flex-end;
   position: relative;
-  background: url(/image/banner/etc/icon_bg.jpg);
+  background: url(../image/banner/etc/icon_bg.jpg);
 }
 
 .Etc_box img{
