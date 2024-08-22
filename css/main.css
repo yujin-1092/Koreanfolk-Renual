@@ -470,7 +470,8 @@ a[class^="underline"]:hover:after{
   margin-top: 47px;
   position: relative;
   overflow: hidden;
-  padding-bottom: 10px;
+  padding: 10px;
+
 }
 .DIS_slide_container{
   display: flex;
@@ -552,11 +553,10 @@ a[class^="underline"]:hover:after{
   display: flex;
   gap: 36px;
   position: absolute;
-  top: -63px;
-  right: 0;
+  right:13.1vw;
 }
 .dis_prev, .dis_next{
-  width: 48px;
+  width: 24px;
   line-height: 48px;
 }
 .dis_prev:hover, .dis_next:hover{
@@ -584,6 +584,14 @@ a[class^="underline"]:hover:after{
   left: 0;
   top:0;
   z-index: 1;
+  opacity: 1;
+}
+@media (max-width:1400px){
+  .Atr_main img{
+    width:0;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+  }
 }
 .atr_title {
   position: relative;
