@@ -299,6 +299,10 @@ a[class^="underline"]:hover:after{
 
 
 /* banner */
+.section h2{
+  height: 0;
+  text-indent: -9999em;
+}
 .slide_wrapper{
   position: relative;
   width: 100vw;
@@ -446,7 +450,7 @@ a[class^="underline"]:hover:after{
   gap:5px;
   opacity: 0;
 }
-.now_pager .swslide_depth span{
+.now_pager .swslide_depth pre{
   color: var(--mediumgray);
   font-size: 14px;
 }
